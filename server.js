@@ -18,3 +18,6 @@ app.get( '/', function( req, res ){
   res.sendFile( path.resolve( 'views/index.html' ) );
 }); // end base url
 
+app.get( '/funky', function( req, res ) {
+
+})
