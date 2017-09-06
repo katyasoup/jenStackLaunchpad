@@ -55,10 +55,10 @@ Checklist:
 ---
 X create GET route in server.js
 X handle click event in client.js
-- create $ajax request in click event that makes a GET request to the new route
-- test $ajax request by having the route console.log a message when the GET route is hit
-- have the route send a response
-- handle the response in client.js by logging it out
+X create $ajax request in click event that makes a GET request to the new route
+X test $ajax request by having the route console.log a message when the GET route is hit
+X have the route send a response
+X handle the response in client.js by logging it out
 
 Stretch Goals:
 ---

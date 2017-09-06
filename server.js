@@ -19,5 +19,5 @@ app.get( '/', function( req, res ){
 }); // end base url
 
 app.get( '/funky', function( req, res ) {
-
-})
+  res.send('here is your funky response from the server');
+});
