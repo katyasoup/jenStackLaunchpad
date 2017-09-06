@@ -9,5 +9,8 @@ function onReady() {
 
 function getFunky() {
     console.log('in getFunky');
-    
+    $.ajax({
+        type: 'GET',
+        url: '/funky',
+    })   
 }
