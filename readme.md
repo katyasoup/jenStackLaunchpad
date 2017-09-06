@@ -63,7 +63,7 @@ X handle the response in client.js by logging it out
 Stretch Goals:
 ---
 
-- run GET $ajax call on page load
+X run GET $ajax call on page load
 - create a counter in server.js that counts how many times the get route has been called and show in terminal with console.log
 - return an object from the server that has the number of times the route has been called
 - display that number on the DOM

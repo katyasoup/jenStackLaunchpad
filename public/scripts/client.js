@@ -5,6 +5,7 @@ $(document).ready(onReady);
 function onReady() {
     console.log('jq ready!');
     $('#requestButton').on('click', getFunky);
+    extraFunky();
 }
 
 function getFunky() {
@@ -16,4 +17,14 @@ function getFunky() {
             console.log('your funky response:', response);
         }
     });   
+}
+
+function extraFunky() {
+    $.ajax({
+        type: 'GET',
+        url: '/groovy',
+        success: function(response) {
+            console.log('groovin!', response);
+        }
+    });
 }

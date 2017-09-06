@@ -21,3 +21,7 @@ app.get( '/', function( req, res ){
 app.get( '/funky', function( req, res ) {
   res.send('here is your funky response from the server');
 });
+
+app.get( '/groovy', function( req, res ) {
+  res.send('and movin!');
+});
