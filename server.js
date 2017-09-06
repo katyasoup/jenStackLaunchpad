@@ -21,12 +21,14 @@ app.get( '/', function( req, res ){
 var counter = 0;
 
 app.get( '/funky', function( req, res ) {
-  counter++;
   console.log('You have called the /funky route ' + counter + ' times!');
-  
   res.send('here is your funky response from the server');
 });
 
 app.get( '/groovy', function( req, res ) {
-  res.send('and movin!');
-});
+  counter++;
+    var counterObject = { 
+      count: counter
+    };
+  res.send(counterObject);
+});  
