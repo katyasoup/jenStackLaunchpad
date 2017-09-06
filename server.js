@@ -18,7 +18,12 @@ app.get( '/', function( req, res ){
   res.sendFile( path.resolve( 'views/index.html' ) );
 }); // end base url
 
+var counter = 0;
+
 app.get( '/funky', function( req, res ) {
+  counter++;
+  console.log('You have called the /funky route ' + counter + ' times!');
+  
   res.send('here is your funky response from the server');
 });
 
